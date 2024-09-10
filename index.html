@@ -3,135 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Modal</title>     
+  <title>Reproductor HLS</title>
+  <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
 <style>
-body {
-    background: url(BB.jpg);
-}
-.modal {  
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  display: block;
-  overflow: auto;
-  position: fixed;
-  background: rgb(0,0,0,.5);
-}
-.modal-contenido {
-  top: 15%;
-  width: 80%;  
-  padding: 20px;
-  margin: 15% auto;
-  position: relative;
-  border-radius: 20px;
-  border: 1px solid #888;
-  background-color: #000;  
-  box-shadow: 10px 10px 0px black;
-  
- &:hover {
-    scale: 105%;
- }
-}
-#Input {
-    color: black;
-    background: gold;
-    font-weight: bold;
-    border-radius: 20px;   
-    box-shadow: 0 0 30px red; 
-    
-  &:hover {
-      scale: 105%;
-  }
-}
-#Message {
-    color: red;
-    display: none;
-}
-#Label {
-    left: 0;
-    color: gray;
-    opacity: .8;
-    position: relative;
-}
-#Imgg {    
-    width: 30%;
-    heigth: auto;   
-    
-  &:hover {
-      scale: 150%;
-  }
-}
-#No {
-    display: none;
-    width: 30%;
-}
-</style>     
+body{
+   background: black;
+}  
+</style>
 </head>
-<body>      
-<center>
-      <div class="contenido">
-  <h1>Bienvenido a mi página</h1>
-  <p>Contenido de la página...</p>
-             </div>
-  <div class="modal" id="Modal">
-   <div class="modal-contenido"> 
-   
- <img id="No" src="https://bit.ly/3y2BVCO"/>
-            
-      <img id="Imgg" src="https://bit.ly/49X0ijf"/><br/>
-      
-<label id="Label">¿Quién vino primero al mundo, La Gallina ó El Huevo?</label><br/><br/>
-      
- <input type="text" id="Input"/>
- 
- <p id="Message">Contraseña incorrecta. Por favor, inténtelo de nuevo.</p>      
-    </div>
-  </div>
-</center>      
+<body>
+  <video poster='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyvbv5PvF2z-3a0dvUeqDuVJ04XwNfV_RJjt1mOvNSkf_vB6v1Pi4xfdRud01L-Mo6d1McJFzb3c_YnHedPqyXkG5Lg0cSL6ZkwaeiIWbd5P2KUcuzuXXY8aiA_ECGHxQsDXRLrvy2S_lq-DW3EyW0CXKWqtdpo5t-lLV4woSf7rzVomkg0K4fGOjV/s800/Media_230118_212154.gif' id="Video" class="video-js vjs-default-skin" controls preload="auto" width="360" height="240" data-setup='{}'>
+    <source src="https://cdn4.lqsa.es/hls/3/stream.m3u8?cachebust=904b909f" type="application/x-mpegURL">
+  </video><br/>
 
-<audio autoplay src="Intro.mp3"></audio>
-<audio id="A" src="Error.mp3"></audio>
-   
-          <!-- MODAL -->
-
-<script>
-document.addEventListener("keyup", e=>{
-    var password = Input.value.toLowerCase().trim();
-    
- var Clave = ["el huevo", "huevo"];
-    
-   if(e.key === 'Enter' && Clave.includes(password)){    
-   window.location.href = 'https://u.pcloud.link/publink/show?code=XZ9awE0Zd1HydGyrss5Ivq6z7iigumYCsRmy';
-      
- } else if(e.key === 'Enter' && !Clave.includes(password)){
-   Input.value = '';
-   No.style.display = "block"; 
-   Imgg.style.display = "none";   
-   Message.style.display = "block";
-   A.play();
-  } else if(e.target.matches('#Input')){
-    Message.style.display = "none";   
-    No.style.display = "none"; 
-    Imgg.style.display = "block"; 
-  }
-});
-</script>
-
-<script> Label.addEventListener('copy', function() {      
-   document.oncopy = event => {
-    event.preventDefault();
-    event.clipboardData.setData('text/plain', 'Huevo');
-}      
-});   
-</script>
-</body>
-</html>
-
-
-
-
-
-
+  <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls.js@latest/dist/videojs-contrib-hls.min.js"></script>
+  
