@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <meta charset="UFT-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<html lang="es">
 <head>
-  <title>🌎CAPITAN PLANETA🌎</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIDA-TV</title>
 <style>
-body{
-    background:black;
+body {
+    background: #000;
 }
-.summary {
-    background:purple;
-    color:white;
-    border-radius:50px;
-    padding:5px;
+#video-container {
+    width: 100%;
+    text-align: center;
 }
 iframe {
-    background: url(https://bit.ly/3RRIMoA);
+    width: 90%;
+    height: 200px;
+    aspect-ration: 16/9;
+    border-radius: 5%;
+    border-top: .5vh solid brown;
+    border-left: 2vh solid brown;
+    border-right: .1vh solid brown;
+    border-bottom: 2vh solid #800000;
 }
 .link {
-    background:#800090;
-    color:gold;
-    border-radius:10px;
-    opacity:0.8;
-    padding:8px;
-    width:0;
-    font-size:20px;
+    background: gold;
+    border-radius:50%;
+    font-weight: bold;
+    border: 2px solid purple;
 }
-#opaco{
-    color:gray;
-    opacity:0.3;
-    font-weight:bold;
-    font-size:25px;
+.link:hover{
+    transform: scale(1.5) perspective(500px)rotateY(50deg);
+    padding-right: 50px;
+    width: 30%;
+    background: orange;
+    border: 2px solid green;
 }
-button{
+h1 {
+    color: gold;
+}
+#fullscreenButton{
     background:gray;
     color:black;
     opacity:0.5;
@@ -41,267 +47,88 @@ button{
     padding:1px;
     border-radius:50px;
 }
-#A{
-    display: grid;
-    background:#800050;
-    border-radius:20px;
-    scale: 90%;    
-    justify-content: center;
+#Hr1 {
+    width: 10%;
+    height: 1px;
+    background: gray;
+    transform: rotate(80deg);
 }
-#mas{
-    border-radius:50px;
-    background:gray;
-    color:red;
-}
-</style>  
-      <!-- STYLE ROTATIVO -->
-     
-<style>
-#I{
-             box-sizing: border-box;
-             width: 5em;
-             height: 3em;
-             font-size: 20px;
-             border-radius: 0.5em;
-             margin: 0.5em;
-             box-shadow: 0 01em rgba(0,0,0,0.2);
-             color: white;
-             font-family: sans-serif; 
-             text-transform: capitalize;
-             line-height: 3em;
-             transition: 0.3s;
-             cursor: pointer;
-}
-summary{
-    background:purple;
-    border-radius: 50%;
-}
-#fila{
-    display: flex;
-    overflow: scroll;
-    position:relative;
-    left:-10px;
-    top:0px;
-    scale:95%;
-    gap: 5px;
-    justify-content: start;
-}
-</style>
-<style>                 
-#I:nth-child(odd) {
-             background: linear-gradient(to right,orange, tomato, blue);
-text-align: left;
-             padding-left: 10%;
-             transform: perspective(500px)rotateX(45deg);     
-}              
-#I:nth-child(even) {
-             background: linear-gradient(to left,orange, tomato, gold);
-             text-align: right;
-             padding-right: 10%;
-             transform: perspective(500px)rotateX(-45deg);     
-}
-#I:nth-child(odd):hover {
-             transform: perspective(200px)rotateY(55deg);
-             padding-left: 5%;     
-}
-       
-
-#I:nth-child(even):hover{
-             transform: perspective(200px)rotateY(-55deg);
-             padding-right: 5%;     
-}
-</style>
-<style>
-#body{
-    transform: rotate(-90deg);
-    scale:90%;
-    position: fixed;
-    width:48%;
-    height:40%;
-    left:-20%;
-    top: 25%;
-    display:grid;    
+#Hr2 {
+    width: 10%;
+    height: 1px;
+    background: gray;
+    transform: translate(2vh, -1vh)rotate(-80deg);
 }
 </style>
 </head>
-<body>
-            <center>    
-    <img hidden src="https://bit.ly/3RRIMoA"/>   
-           
-        <div><br/>
- <iframe src="https://ok.ru/videoembed/1335175023177" style="width:100%; aspect-ration:16/9" frameborder="0" allowfullscreen="true" allow="encrypted-media" name="WILLOW"></iframe></div>
-            
-         <div><br/>
-   <details name="info">
-  <summary class="summary">⭐ TEMP 1 ⭐</summary>  
-<hr style="height:1px; border:0"/>         
-       <div id="A"> 
-    <div id="fila">
-            
-<a href="https://ok.ru/videoembed/1335175023177" target="WILLOW"><img src="" title="1" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335175416393" target="WILLOW"><img src="" title="2" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335175547465" target="WILLOW"><img src="" title="3" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176333897" target="WILLOW"><img src="" title="4" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335177316937" target="WILLOW"><img src="" title="5" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335173384777" target="WILLOW"><img src="" title="6" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335177775689" target="WILLOW"><img src="" title="7" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176596041" target="WILLOW"><img src="" title="8" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176399433" target="WILLOW"><img src="" title="9" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335173712457" target="WILLOW"><img src="" title="10" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335173581385" target="WILLOW"><img src="" title="11" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335173646921" target="WILLOW"><img src="" title="12" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335175613001" target="WILLOW"><img src="" title="13" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335173777993" target="WILLOW"><img src="" title="14" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335173843529" target="WILLOW"><img src="" title="15" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335173909065" target="WILLOW"><img src="" title="16" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335175744073" target="WILLOW"><img src="" title="17" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335177644617" target="WILLOW"><img src="" title="18" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335174957641" target="WILLOW"><img src="" title="19" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176071753" target="WILLOW"><img src="" title="20" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176006217" target="WILLOW"><img src="" title="21" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335173974601" target="WILLOW"><img src="" title="22" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335174040137" target="WILLOW"><img src="" title="23" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335174761033" target="WILLOW"><img src="" title="24" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335174826569" target="WILLOW"><img src="" title="25" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335177710153" target="WILLOW"><img src="" title="26" id="I"/></a>
-    </div>
-       </div>
-          </details> 
-             </div>
-            
-<hr style="height:1px; border:0"/>                        
-         
-         <div>         
-  <details name="info" onclick="playSound()">
-  <summary class="summary">⭐ TEMP 2 ⭐</summary><br/>
-     <div id="A">       
-       <div id="fila">
-       
- <a href="https://ok.ru/videoembed/1335176727113" target="WILLOW"><img src="" title="1" id="I"/></a>
- 
- <a href="https://ok.ru/videoembed/1335177513545" target="WILLOW"><img src="" title="2" id="I"/></a> 
- 
-<a href="https://ok.ru/videoembed/1335175350857" target="WILLOW"><img src="" title="3" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335177579081" target="WILLOW"><img src="" title="4" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335175481929" target="WILLOW"><img src="" title="5" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335177185865" target="WILLOW"><img src="" title="6" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335177841225" target="WILLOW"><img src="" title="7" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335174105673" target="WILLOW"><img src="" title="8" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335175875145" target="WILLOW"><img src="" title="9" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335177448009" target="WILLOW"><img src="" title="10" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335175940681" target="WILLOW"><img src="" title="11" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335174171209" target="WILLOW"><img src="" title="12" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335177054793" target="WILLOW"><img src="" title="13" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176202825" target="WILLOW"><img src="" title="14" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335175088713" target="WILLOW"><img src="" title="15" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176268361" target="WILLOW"><img src="" title="16" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335174302281" target="WILLOW"><img src="" title="17" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176792649" target="WILLOW"><img src="" title="18" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335175154249" target="WILLOW"><img src="" title="19" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335175809609" target="WILLOW"><img src="" title="20" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335177382473" target="WILLOW"><img src="" title="21" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176464969" target="WILLOW"><img src="" title="22" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176661577" target="WILLOW"><img src="" title="23" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335177251401" target="WILLOW"><img src="" title="24" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335174433353" target="WILLOW"><img src="" title="25" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176530505" target="WILLOW"><img src="" title="26" id="I"/></a>
-     </div>       
-        </div>       
-          </details>    
-                </div>
- <hr style="height:1px; border:0"/>        
-                 
-            <div>       
-         <details name="info" onclick="playSound()">
-   <summary class="summary">⭐ TEMP 3 ⭐</summary>
-<hr style="height:1px; border:0"/>         
-    <div id="A">       
-       <div id="fila">
-       
- <a href="https://ok.ru/videoembed/1335174498889" target="WILLOW"><img src="" title="1" id="I"/></a>
- 
- <a href="https://ok.ru/videoembed/1335177120329" target="WILLOW"><img src="" title="2" id="I"/></a> 
- 
-<a href="https://ok.ru/videoembed/1335174367817" target="WILLOW"><img src="" title="3" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335174892105" target="WILLOW"><img src="" title="4" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176137289" target="WILLOW"><img src="" title="5" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176989257" target="WILLOW"><img src="" title="6" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335174695497" target="WILLOW"><img src="" title="7" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335174564425" target="WILLOW"><img src="" title="8" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335174629961" target="WILLOW"><img src="" title="9" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335175285321" target="WILLOW"><img src="" title="10" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176923721" target="WILLOW"><img src="" title="11" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335175678537" target="WILLOW"><img src="" title="12" id="I"/></a>
-
-<a href="https://ok.ru/videoembed/1335176858185" target="WILLOW"><img src="" title="13" id="I"/></a>
-     </div>       
-        </div>                  
-         </details>                                          
-             </div><br/>    
-                      
-         <center><button id="fullscreenButton">Pantalla completa</button><br/>
-     
-<hr style="height: 10vh; border:0"/>         
+<body>        
+             <center>
+      <h1>⚙️AIDA-TV⚙️</h1><br/>
+      
+<hr id="Hr1"/><hr id="Hr2"/>  
+   
+<div id="video-container">
+    <iframe id="random-video" src="" frameborder="0"></iframe>
+</div>
+             
+<h3 style="color: gold; font-family: cursive">📺 AIDA-TV 📺</h3>             
   
-<i id="opaco">🌎 Capitan Planeta 🌎</i>        
-                                  
+  <button id="fullscreenButton">Pantalla completa</button>
+       
+       <img id="opaco" src="https://bit.ly/3G2A4hx" alt="Retroceder" style="scale: 70%"/>  
+            </center>
+     
+<script>
+    window.onload = function() {
+        var videos = [
+            'https://archive.org/download/3x-01-source/3x01%28Source%29.mp4',
+            'https://archive.org/download/3x-01-source/3x02%28Source%29.mp4',
+            'https://archive.org/download/3x-01-source/3x03%28Source%29.mp4',
+             'https://archive.org/download/3x-01-source/3x04%28Source%29_1.mp4', 
+             'https://archive.org/download/3x-01-source/3x05%28Source%29_1.mp4', 
+             'https://archive.org/download/3x-01-source/3x06%28Source%29_1.mp4', 
+             'https://archive.org/download/3x-01-source/3x07%28Source%29_1.mp4',
+              'https://archive.org/download/3x-01-source/3x08%28Source%29_1.mp4',
+               'https://archive.org/download/3x-01-source/3x09%28Source%29_1.mp4',
+                'https://archive.org/download/3x-01-source/3x10%28Source%29_1.mp4', 
+                'https://archive.org/download/3x-01-source/3x11%28Source%29_1.mp4',
+                 'https://archive.org/download/3x-01-source/3x12%28Source%29_1.mp4',
+                  'https://archive.org/download/3x-01-source/3x13%28Source%29_1.mp4', 
+                  'https://archive.org/download/3x-01-source/3x14%28Source%29.mp4',
+                   'https://archive.org/download/4x-08-source-1/4x01%28Source%29.mp4',
+                    'https://archive.org/download/4x-08-source-1/4x02%28Source%29.mp4', 
+                    'https://archive.org/download/4x-08-source-1/4x03%28Source%29.mp4', 
+                    'https://archive.org/download/4x-08-source-1/4x04%28Source%29.mp4', 
+                    'https://archive.org/download/4x-08-source-1/4x05%28Source%29.mp4',
+                     'https://archive.org/download/4x-08-source-1/4x06%28Source%29.mp4',
+                     'https://archive.org/download/4x-08-source-1/4x07%28Source%29_1.mp4',
+                     'https://archive.org/download/4x-08-source-1/4x08%28Source%29_1.mp4',
+                     'https://archive.org/download/4x-08-source-1/4x09%28Source%29.mp4',
+                     'https://archive.org/download/4x-08-source-1/4x10%28Source%29.mp4',
+                     'https://archive.org/download/4x-08-source-1/4x11%28Source%29.mp4',
+                     'https://archive.org/download/4x-08-source-1/4x12%28Source%29.mp4',
+                     'https://archive.org/download/4x-08-source-1/4x13%28Source%29.mp4',
+                     'https://archive.org/download/4x-08-source-1/4x14%28Source%29.mp4',
+                     'https://archive.org/download/4x-08-source-1/4x15%28Source%29.mp4',
+                     'https://archive.org/download/4x-08-source-1/4x16%28Source%29.mp4',
+                  'https://archive.org/download/5x-03_202405/5x01%28Source%29.mp4',
+                  'https://archive.org/download/5x-03_202405/5x02%28Source%29.mp4',
+                  'https://archive.org/download/5x-03_202405/5x03.mp4',
+                  'https://archive.org/download/5x-03_202405/5x04.mp4',
+                  'https://archive.org/download/5x-03_202405/5x05.mp4',
+                  'https://archive.org/download/5x-03_202405/5x06%28MP4%29.mp4',
+                  'https://archive.org/download/5x-03_202405/5x07%28MP4%29.mp4',
+                  'https://archive.org/download/5x-03_202405/5x08%28MP4%29.mp4',
+                  'https://archive.org/download/5x-03_202405/5x09%28MP4%29.mp4',
+                  'https://archive.org/download/5x-03_202405/5x10%28MP4%29.mp4'
+                  ];
+
+        var currentIndex = Math.floor(Math.random() * videos.length);
+        var iframe = document.getElementById('random-video');
+        iframe.src = videos[currentIndex];
+    };
+</script>
+
 <script>
 var fullscreenButton = document.querySelector('#fullscreenButton');
 var iframe = document.querySelector('iframe');
@@ -319,6 +146,8 @@ fullscreenButton.addEventListener('click', function() {
 });
 </script>
 
-</body> 
+</body>
 </html>
-    
+     
+
+
